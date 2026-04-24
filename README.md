@@ -86,7 +86,6 @@ tugaspraktikum1-blokprosedural-kelompok_mahruf
 ├── program.sql
 ├── laporan.pdf
 └── screenshot/
-
 ---
 
 ##  Dokumentasi
