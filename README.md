@@ -1,6 +1,9 @@
 # Tugas Praktikum 2 - Blok Prosedural MySQL
 
-##  Anggota Kelompok
+##  Nama Kelompok
+Kelompok 8
+
+##  Anggota
 - Muhammad Mahruf (IK2411061)
 - Fauzan Azima (IK2411039)
 - Gefran (IK2411029)
@@ -11,76 +14,68 @@ Abdul Malik, S.Kom., M.Cs.
 ---
 
 ##  Deskripsi Singkat
-Program ini dibuat untuk memahami konsep blok prosedural pada MySQL menggunakan stored procedure. 
-Data mahasiswa diproses menggunakan variabel dan kondisi (IF), kemudian hasilnya ditampilkan dengan SELECT.
+Program ini dibuat untuk memahami penggunaan blok prosedural di MySQL dengan memanfaatkan stored procedure. Data mahasiswa diproses menggunakan parameter sehingga dapat diubah langsung saat program dijalankan, tanpa harus mengedit kode utama.
 
 ---
 
 ##  Tujuan
-- Memahami penggunaan stored procedure di MySQL  
-- Menggunakan variabel dengan DECLARE  
-- Menerapkan logika IF  
+- Memahami konsep stored procedure di MySQL  
+- Menggunakan variabel dan parameter (IN)  
+- Menerapkan logika IF dalam program  
 - Menampilkan hasil menggunakan SELECT  
 
 ---
 
 ##  Struktur Program
 
-### 🔹 Bagian A – Identitas Mahasiswa
-Menampilkan data mahasiswa seperti nama, NIM, program studi, dan semester.
+### 🔹 Bagian A – Identitas Mahasiswa  
+Menampilkan identitas mahasiswa seperti nama, NIM, program studi, dan semester.
 
-### 🔹 Bagian B – Validasi Akademik
-Melakukan pengecekan:
-- Status pembayaran  
-- Jumlah SKS  
-- IPK  
+### 🔹 Bagian B – Validasi Akademik  
+Melakukan pengecekan status pembayaran, jumlah SKS, dan IPK untuk menentukan valid atau tidaknya data.
 
----
+### 🔹 Bagian C – Kelayakan KRS  
+Menentukan apakah mahasiswa layak mengambil KRS berdasarkan data akademik yang dimasukkan.
 
-### 🔹 Bagian C – Kelayakan KRS
-Menentukan apakah mahasiswa layak mengambil KRS atau tidak.
-
----
-
-### 🔹 Bagian D – Perbandingan Mahasiswa
-Membandingkan dua mahasiswa berdasarkan IPK dan SKS.
+### 🔹 Bagian D – Perbandingan Mahasiswa  
+Membandingkan dua mahasiswa berdasarkan IPK, dan jika sama maka dilihat dari jumlah SKS.
 
 ---
 
 ##  Skenario Pengujian
+Program diuji dengan beberapa kondisi:
 
-1. Data Valid  
+1. **Data Valid**  
    - Status: LUNAS  
    - SKS: > 0  
    - Hasil: Layak  
 
-2. Tidak Valid (Status)  
+2. **Tidak Valid (Status)**  
    - Status: BELUM  
    - Hasil: Tidak Layak  
 
-3. Tidak Valid (SKS)  
+3. **Tidak Valid (SKS)**  
    - SKS: 0  
    - Hasil: Tidak Layak  
 
 ---
 
-##  Cara Kerja Program
-Program berjalan dengan:
-1. DECLARE variabel  
-2. Mengisi nilai  
-3. IF untuk logika  
-4. SELECT untuk output  
+##  Cara Menjalankan Program
 
----
+Contoh pemanggilan:
 
-##  Struktur Repository
+```sql
+CALL bagian_c(
+'Muhammad Mahruf','IK2411061',4,'INFORMATIKA',18,3.40,'LUNAS'
+);
 
-    tugaspraktikum1-blokprosedural-kelompok_mahruf
-    │
-    ├── README.md
-    ├── program.sql
-    ├── laporan.pdf
-    └── screenshot/
+ Struktur Repository
+tugaspraktikum1-blokprosedural-kelompok8
+│
+├── README.md
+├── program.sql
+├── laporan.pdf
+└── screenshot/
         ├── bagian_a.png
         ├── bagian_b.png
         ├── c_valid.png
@@ -94,4 +89,4 @@ Hasil eksekusi program dapat dilihat pada folder `screenshot/`.
 ---
 
 ##  Kesimpulan
-Program ini berhasil digunakan untuk memproses dan mengevaluasi data mahasiswa menggunakan konsep blok prosedural di MySQL dengan memanfaatkan variabel dan logika kondisi.
+Program ini berhasil mengimplementasikan blok prosedural di MySQL dengan menggunakan parameter sehingga data dapat diubah dengan mudah. Program juga mampu menghasilkan output yang berbeda sesuai kondisi yang diberikan.
