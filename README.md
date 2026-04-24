@@ -80,19 +80,18 @@ Program berjalan dengan urutan:
 
 ## 📂 Struktur Repository
 
-
-tugaspraktikum1-blokprosedural-kelompok_mahruf
-│
-├── README.md
-├── program.sql
-├── laporan.pdf
-└── screenshot/
-├── bagian_a.png
-├── bagian_b.png
-├── c_valid.png
-├── c_tidak_valid1.png
-├── c_tidak_valid2.png
-└── bagian_d.png
+    tugaspraktikum1-blokprosedural-kelompok_mahruf
+    │
+    ├── README.md
+    ├── program.sql
+    ├── laporan.pdf
+    └── screenshot/
+        ├── bagian_a.png
+        ├── bagian_b.png
+        ├── c_valid.png
+        ├── c_tidak_valid1.png
+        ├── c_tidak_valid2.png
+        └── bagian_d.png
 
 ##  Dokumentasi
 Hasil eksekusi program dapat dilihat pada folder `screenshot/`.
