@@ -78,11 +78,17 @@ tugaspraktikum1-blokprosedural-kelompok8
 ├── laporan.pdf
 └── screenshot/
     ├── bagian_a.png
+    ├── bagian_a1.png
     ├── bagian_b.png
+    ├── bagian_b1.png
+    ├── bagian_d.png
+    ├── bagian_d1.png
     ├── c_valid.png
-    ├── c_tidak_valid1.png
-    ├── c_tidak_valid2.png
-    └── bagian_d.png
+    ├── c_valid1.png
+    ├── c_tidak_validUKT.png
+    ├── c_tidak_validUKT1.png
+    ├── c_tidak_validSKS.png
+    ├── c_tidak_validSKS1.png
 ```
 ##  Dokumentasi Hasil Eksekusi
 
