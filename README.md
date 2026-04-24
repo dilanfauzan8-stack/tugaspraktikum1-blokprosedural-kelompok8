@@ -64,29 +64,23 @@ Program diuji dengan beberapa kondisi:
 
 Contoh pemanggilan:
 
-```sql
+Sql
 CALL bagian_c(
 'Muhammad Mahruf','IK2411061',4,'INFORMATIKA',18,3.40,'LUNAS'
 );
 
- Struktur Repository
-tugaspraktikum1-blokprosedural-kelompok8
+``` 📂 Struktur Repository
+
+``tugaspraktikum1-blokprosedural-kelompok8
 │
 ├── README.md
 ├── program.sql
 ├── laporan.pdf
 └── screenshot/
-        ├── bagian_a.png
-        ├── bagian_b.png
-        ├── c_valid.png
-        ├── c_tidak_valid1.png
-        ├── c_tidak_valid2.png
-        └── bagian_d.png
+    ├── bagian_a.png
+    ├── bagian_b.png
+    ├── c_valid.png
+    ├── c_tidak_valid1.png
+    ├── c_tidak_valid2.png
+    └── bagian_d.png
 
-##  Dokumentasi
-Hasil eksekusi program dapat dilihat pada folder `screenshot/`.
-
----
-
-##  Kesimpulan
-Program ini berhasil mengimplementasikan blok prosedural di MySQL dengan menggunakan parameter sehingga data dapat diubah dengan mudah. Program juga mampu menghasilkan output yang berbeda sesuai kondisi yang diberikan.
