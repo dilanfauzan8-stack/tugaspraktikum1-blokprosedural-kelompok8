@@ -1,13 +1,9 @@
--- =========================
 -- DATABASE
--- =========================
 DROP DATABASE IF EXISTS praktikum2_kelompok8;
 CREATE DATABASE praktikum2_kelompok8;
 USE praktikum2_kelompok8;
 
--- =========================
 -- BAGIAN A
--- =========================
 DROP PROCEDURE IF EXISTS bagian_a;
 DELIMITER $$
 
@@ -31,9 +27,7 @@ END $$
 
 DELIMITER ;
 
--- =========================
 -- BAGIAN B
--- =========================
 DROP PROCEDURE IF EXISTS bagian_b;
 DELIMITER $$
 
@@ -82,9 +76,7 @@ END $$
 
 DELIMITER ;
 
--- =========================
 -- BAGIAN C
--- =========================
 DROP PROCEDURE IF EXISTS bagian_c;
 DELIMITER $$
 
@@ -161,9 +153,7 @@ END $$
 
 DELIMITER ;
 
--- =========================
 -- BAGIAN D
--- =========================
 DROP PROCEDURE IF EXISTS bagian_d;
 DELIMITER $$
 
